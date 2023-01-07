@@ -1,0 +1,48 @@
+:root{
+    --font: 'VT323', monospace;
+    --blue: #2195f3;
+    --white: rgb(201, 201, 201);
+}
+
+body{
+    background-color: black;
+    color: white;
+    font-family: var(--font);
+    margin: 0;
+}
+
+/* ===== NAV ===== */
+
+nav{
+    font-size: 4rem;
+    color: var(--white);
+    border-bottom: .1px solid white;
+    padding:10px  20px;
+    user-select: none;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+nav div img{
+    width: 70px;
+}
+
+.audio-icon{
+    width: 70px;
+    transition: all 100ms ease-in;
+}
+
+.audio-icon:hover{
+    transform: rotate(-10deg);
+    width: 75px;
+}
